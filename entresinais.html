@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Libras</title>
+    <link rel="stylesheet" href="css/entresinais.css" type="text/css" />
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;});
+    </script>
+
+</body>
+
+    <main>
+        <section id="caixote"> <!--relative-->
+            <section id="caixade-texto1"> <!--absolute-->
+                <h1 id="slogan">QUEBRE BARREIRAS DE COMUNICAÇÃO COM O NOSSO SOFTWARE</h1>
+                <p id="mini-texto">Conectando sinais e voz por meio da tecnologia, <br/> comunicação rápida, acessível e<br/>inclusiva para todos.</p>
+                <nav id="botao">
+                    <a id="botaolaranja1" href="sobre-o-projeto.html">SAIBA MAIS</a>
+                    <br/>
+                    <a id="botao-roxo1" href="">QUERO TESTAR</a>
+                </nav>
+            </section> 
+            <section id="imagem-home"> <img src="imagens/Gemini_Generated_Image_hi1eqnhi1eqnhi1e.png"> </section> <!--absolute-->
+        </section>
+        
+        <section id="funcionalidades">
+            <div id="atendimento">
+                <img src="imagens/ATENDENTE SURDO 1 1.png"/>
+                <img src="imagens/ATENDENTE SURDO 2 1.png"/>
+            </div>
+            
+            <section id="camera_olho_som">
+                <div>
+                    <img src="imagens/foco-da-camera.gif" id="foco">
+                    <p>Reconhecimento de movimentos pela câmera.</p>
+                </div>
+                <div>
+                    <img src="imagens/traducao.gif" id="sinais">
+                    <p>Tradução dos sinais.</p>
+                </div>
+                <div>
+                    <img src="imagens/amizade.gif" id="amizade">
+                    <p>Receber sinais pelo avatar.</p>
+            </div>
+            </section>
+        </section>
+
+               <h1 class="titulo">COMO QUE ELE FUNCIONA</h1>
+    <section class="container_avatar">
+        <img src="imagens/imagem12.jpg" alt="avatar">
+        
+
+    <div class="texto_container_avatar">
+    <h2> Os Sinais em LIBRAS são captados <br> pela câmera e traduzidos em um texto <br> falado em tempo real. <br>
+        Basta ter uma câmera conectada <br> em seu dispositivo.
+    </h2>
+   
+    <a href="login.html" class="botao_link">Testar</a>
+    </section>
+
+        <section id="conheca-mascote">
+            <h1 id="titulo">CONHEÇA O NOSSO MASCOTE</h1>
+            <section id="azul">
+                <h2>SINALITO</h2>
+                <div id="container-flex">
+                    <div>
+                        <p class="paragrafo-1">Olá! Eu sou o Sinalito</p>
+                        <p class="paragrafo-1">Sou o mascote da empresa e estou aqui para representar comunicação, inclusão e acessibilidade.</p>
+                        <p class="paragrafo-1">Nossa tecnologia ajuda a traduzir Libras para português em tempo real, aproximando pessoas surdas e ouvintes.</p>
+                    </div>
+                    <div id="mascote">
+                    <img src="imagens/image 33.png" alt="Mascote Sinalito">
+                    </div>
+                </div>
+            </section> 
+        </section>
+        <article id="descricao">
+            <h1 id="titulo_des">NOSSO PROJETO</h1>
+            <section id="caixona_des">
+                <div class="caixa_des">
+                    <img src="imagens/visão.png" >
+                    <h1 class="titulo_imgs">VISÃO</h1>
+                    <p class="p_imgs">Ser referência em acessibilidade na comunicação.</p>
+                </div>
+                <div class="caixa_des">
+                    <img src="imagens/missão.png" class="img">
+                    <h1 class="titulo_imgs">MISSÃO</h1>
+                    <p class="p_imgs">Facilitar o dia a dia do deficiente auditivo</p>
+                </div>
+                <div class="caixa_des">
+                    <img src="imagens/Valores.png" class="img">
+                    <h1 class="titulo_imgs">VALORES</h1>
+                    <p class="p_imgs">Inclusão e acessibilidade utilizando IA e Lingua de Sinais</p>
+                </div>
+            </section>
+        </article>
+        <nav id="botoes" class="botao_descricao">
+            <a id="botaolaranja2" href="duvidas_frequentes.html">DÚVIDAS FREQUENTES</a>
+             <br/>
+            <a id="botao-roxo2" href="sobre-o-projeto.html">SAIBA MAIS</a>
+        </nav>
+
+        <section id="sobre_nos">
+            <h1 id="titulo_sobrenos">NOSSA EQUIPE</h1>
+
+            <section id="coluna1">
+                <div class="info_sobrenos">
+                    <a href="https://www.linkedin.com/in/thayna-mateus-115011230/"><img src="imagens/thay.jpg"  class="img_equipe"/></a>
+                    <h1 class="nome">Thayna Mateus da Silva</h1>
+                    <p class="sobre">18 anos <br/> Front-End e Pesquisa</p>
+                </div>
+                <div class="info_sobrenos">
+                    <a href="https://www.linkedin.com/in/amanda-soares-da-silva-83356730b/"><img src="imagens/soso.png" class="img_equipe" /></a>
+                    <h1 class="nome">Amanda Soares da Silva</h1>
+                    <p class="sobre">19 anos <br/> Front-End e Figma</p>
+                </div>
+                <div class="info_sobrenos">
+                    <a href="https://www.linkedin.com/in/ryan-a-aa87873aa/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="imagens/ryan.png" class="img_equipe"/></a>
+                    <h1 class="nome">Ryan Almeida Marques</h1>
+                    <p class="sobre">17 anos <br/> Front-End e Pesquisa</p>
+                </div>
+                
+            </section>
+            <section id="coluna2">
+                <div class="info_sobrenos">
+                    <a href="https://www.linkedin.com/in/gustavobozzodasilva/?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src="imagens/gus.png" class="img_equipe"/></a>
+                    <h1 class="nome">Gustavo Bozzo da Silva</h1>
+                    <p class="sobre">20 anos <br/> Modelador 3D e Front-End</p>
+                </div>
+                <div class="info_sobrenos">
+                    <img src="imagens/rafa.png" class="img_equipe"/>
+                    <h1 class="nome">Rafaella Aparecida Cintra</h1>
+                    <p class="sobre">20 anos <br/> Front-End e Imagens</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+<div class="container-acessibilidade-mestre">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        </div>
+
+        <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account","SEU_ID_AQUI");s.setAttribute("src","https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+        </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app')</script>
+
+    <div id="footer"></div>
+
+    <script>
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+        
+    
+</body>
+</html>

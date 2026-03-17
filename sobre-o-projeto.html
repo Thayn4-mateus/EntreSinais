@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre libras:
+    o projeto das nossas vidas</title>
+    <link rel="stylesheet" href="css/sobre-o-projeto.css" type="text/css" />
+    <link rel="stylesheet" href="css/entresinais.css" type="text/css" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;});
+    </script>
+
+    <main>  
+        <section id="cabecalho"> 
+            <h1>Entre libras</h1>
+            <h5>o projeto das nossas vidas</h5>
+        </section>
+
+        <section id="texto1" class="textos">
+            <h1 class="titulos">Como o <span> Entre Sinais</span> nasceu?</h1>
+            <p class="paragrafos">O Entre Sinais nasceu da vontade de aproximar pessoas. Durante atividades do Proa e conversas sobre acessibilidade, percebemos como situações simples do dia a dia como pedir informação, realizar um atendimento ou tirar uma dúvida  ainda são barreiras para pessoas surdas. Foi nesse momento que entendemos que a comunicação não deveria ser um obstáculo, mas uma ponte.</p>
+        </section>
+
+        <section id="texto2" class="textos">
+            <h1 class="titulos">Para quem foi feito esse projeto?</h1>
+            <p class="paragrafos">O Entre Sinais é destinado a pessoas com deficiência auditiva, empresas, atendentes, estudantes e qualquer pessoa que queira tornar a comunicação mais acessível e humanizada. Nosso objetivo é promover acessibilidade, incentivar o aprendizado da Libras e criar um ambiente digital intuitivo, acolhedor e funcional.
+                <br/>
+                <br/>
+            Mais do que um site, o <span> Entre Sinais </span> é um movimento por mais <span> empatia, conexão e inclusão.</span> Porque comunicar é um direito de <span> todos </span> e entender é um ato de respeito.</p>
+        </section>
+
+        <section id="texto3" class="textos">
+            <h1 class="titulos">Por que ele existe?</h1>
+            <p class="paragrafos">O projeto surgiu com o propósito de facilitar a interação entre pessoas surdas e ouvintes por meio da tecnologia. Acreditamos que inclusão não é apenas adaptação, mas respeito, autonomia e igualdade de oportunidades.</p>
+        </section>
+    </main>
+
+    <div class="container-acessibilidade-mestre">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        </div>
+
+        <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account","SEU_ID_AQUI");s.setAttribute("src","https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+        </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app')</script>
+
+    <div id="footer"></div>
+
+    <script>
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

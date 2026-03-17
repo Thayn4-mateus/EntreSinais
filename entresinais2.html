@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre Sinais</title>
+
+  <link rel="stylesheet" href="css/entresinais2.css">
+
+</head>
+
+<body>
+  
+  <main>
+
+    <!-- TELA 1 -->
+    <section id="tela1" class="tela ativa">
+      <div class="container">
+
+        <div class="menu-esquerda">
+          <header class="titulo-box">
+            <h1>Escolha por onde começar:</h1>
+          </header>
+
+          <nav class="botoes-inicio">
+            <button id="btnSinais">Sinais</button>
+            <button id="btnFrases">Frases</button>
+          </nav>
+        </div>
+
+        <div class="area-avatar">
+          <img src="imagens/Mascote SF.png" alt="Mascote">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TELA 2 -->
+    <section id="tela2" class="tela">
+
+      <header class="topo">
+        <button class="voltar" data-voltar="tela1">&lt;</button>
+
+        <div class="titulo-box">
+          <h2>Você escolheu Sinais! Faça os sinais em frente à câmera:</h2>
+        </div>
+      </header>
+
+      <div class="conteudo2">
+
+        <div class="cameras">
+
+          <div class="camera-box">
+            <video id="video1" autoplay playsinline></video>
+          </div>
+
+          <div class="camera-box" style="position:relative;">
+            <video id="video2" autoplay playsinline></video>
+            <canvas id="canvas2" style="position:absolute; top:0; left:0;"></canvas>
+          </div>
+
+        </div>
+
+        <div class="lado-direito">
+
+          <button id="btnListaSinais" class="botao-roxo grande">
+            Lista de Sinais
+          </button>
+
+          <div class="frase-box">
+            <p id="fraseDetectada">Frase aparece aqui</p>
+          </div>
+
+          <p id="statusSistema"></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TELA 3 -->
+    <section id="tela3" class="tela">
+      <header class="topo">
+        <button class="voltar" data-voltar="tela2">&lt;</button>
+        <div class="titulo-box">
+          <h2>Faça um dos sinais abaixo:</h2>
+        </div>
+      </header>
+
+      <div class="lista-frases grande">
+        <p>Olá, tudo bem com você?</p>
+        <p>Ok, muito obrigado</p>
+        <p>Obrigado pela ajuda</p>
+        <p>Eu estou aprendendo Libras</p>
+      </div>
+    </section>
+
+    <!-- TELA 4 -->
+    <section id="tela4" class="tela">
+      <header class="topo">
+        <button class="voltar" data-voltar="tela1">&lt;</button>
+        <div class="titulo-box">
+          <h2>Você escolheu Frases! Selecione uma abaixo!</h2>
+        </div>
+      </header>
+
+      <div class="conteudo4">
+
+        <div class="lista-frases selecionavel grande">
+          <p>Olá, tudo bem com você?</p>
+          <p>Ok, muito obrigado</p>
+          <p>Obrigado pela ajuda</p>
+          <p>Eu estou aprendendo Libras</p>
+        </div>
+
+        <div class="lado-direito">
+          <div class="avatar-box">
+            <video id="videoAvatar" width="300" controls></video>
+          </div>
+
+          <button id="btnEscolher" class="botao-roxo grande">
+            Escolher
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MEDIAPIPE -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <script src="entresinais2.js"></script>
+
+</body>
+
+</html>

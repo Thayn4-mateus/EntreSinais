@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Libras</title>
+    <link rel="stylesheet" href="css/duvidas_frequentes.css" type="text/css" />
+    <link rel="stylesheet" href="css/entresinais.css" type="text/css" />
+</head>
+<body> 
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;});
+    </script>
+
+    <main>
+        <section id="caixa">
+            <h1 >DÚVIDAS FREQUENTES</h1>
+
+            <section id="caixa_duv"> 
+                <div class="duvida">
+                    <button class="pergunta">
+                         A tradução é 100% precisa?
+                        <span class="icon">+</span>
+                    </button>
+
+                    <div class="resposta">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusantium unde est natus, beatae libero nam aliquid. Voluptate, minima in. Vitae magnam nulla consectetur temporibus. Reprehenderit magnam sed repudiandae dignissimos provident saepe velit hic id facilis quia ad, molestias sunt voluptas possimus deserunt, magni fugit perspiciatis necessitatibus consequatur? Ipsam, quisquam.</p>
+                    </div>
+                </div>
+                <div class="duvida">
+                    <button class="pergunta">
+                        Existe limite de palavras por tradução?
+                        <span class="icon">+</span>
+                    </button>
+
+                    <div class="resposta">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="duvida">
+                    <button class="pergunta">
+                        O site traduz gírias e expressões regionais?
+                        <span class="icon">+</span>
+                    </button>
+
+                    <div class="resposta">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="duvida">
+                    <button class="pergunta">
+                        Preciso criar uma conta para usar?
+                        <span class="icon">+</span>
+                    </button>
+
+                    <div class="resposta">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="duvida">
+                    <button class="pergunta">
+                        Funciona offline?
+                        <span class="icon">+</span>
+                    </button>
+
+                    <div class="resposta">
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script>
+        const pergunta = document.querySelectorAll(".pergunta");
+
+        pergunta.forEach(pergunta => {
+            pergunta.addEventListener("click", () => {
+
+                const resposta = pergunta.nextElementSibling;
+
+                if(resposta.style.display === "block"){
+                    resposta.style.display = "none";
+                }else{
+                    resposta.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account","SEU_ID_AQUI");s.setAttribute("src","https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+
+   <div class="container-acessibilidade-mestre">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+        </div>
+
+        <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account","SEU_ID_AQUI");s.setAttribute("src","https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+        </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app')</script>
+    <div id="footer"></div>
+
+    <script>
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>

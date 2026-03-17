@@ -1,0 +1,224 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+background:#cfe6ec;
+}
+
+/* telas */
+
+.tela{
+display:none;
+width:100vw;
+height:100vh;
+padding:40px;
+background:#a9d2db;
+}
+
+.tela.ativa{
+display:flex;
+flex-direction:column;
+}
+
+/* TELA 1 */
+
+.container{
+flex:1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.titulo-box{
+background:#3b97a6;
+padding:30px 60px;
+border-radius:40px;
+color:white;
+font-size:32px;
+}
+
+.menu-esquerda{
+display:flex;
+flex-direction:column;
+gap:80px;
+}
+
+.botoes-inicio{
+display:flex;
+flex-direction:column;
+gap:40px;
+align-items:center;
+}
+
+button{
+cursor:pointer;
+border:none;
+}
+
+/* BOTÕES */
+
+.botao-roxo,
+.botoes-inicio button{
+background:linear-gradient(180deg,#8e4cff,#6a30c9);
+color:white;
+font-size:36px;
+padding:25px 80px;
+border-radius:40px;
+box-shadow:0 8px 0 rgba(0,0,0,0.3);
+}
+
+.botao-roxo.grande{
+font-size:40px;
+padding:30px 100px;
+}
+
+/* AVATAR */
+
+.area-avatar img{
+width:700px;
+}
+
+/* TOPO */
+
+.topo{
+display:flex;
+align-items:center;
+gap:30px;
+margin-bottom:60px;
+}
+
+.voltar{
+width:90px;
+height:90px;
+border-radius:50%;
+background:#3b97a6;
+color:white;
+font-size:40px;
+}
+
+/* TELA 2 */
+
+.conteudo2{
+flex:1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.cameras{
+display:flex;
+gap:40px;
+height: 600px;
+}
+
+.camera-box{
+width:700px;
+height:500px;
+background:#cfcfcf;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+}
+
+.lado-direito{
+display:flex;
+flex-direction:column;
+gap:60px;
+}
+
+.frase-box{
+width:380px;
+height:200px;
+background:linear-gradient(180deg,#8e4cff,#6a30c9);
+border-radius:40px;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+width: 500px;
+}
+
+/* LISTAS */
+
+.lista-frases{
+flex:1;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-content:center;
+gap:40px 200px;
+}
+
+.lista-frases.grande p{
+font-size:40px;
+text-decoration:underline;
+cursor:pointer;
+}
+
+/* TELA 4 */
+
+.conteudo4{
+flex:1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.avatar-box{
+width:600px;
+height:500px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+border-radius:30px;
+}
+
+.selecionavel p{
+padding:10px 20px;
+border-radius:10px;
+}
+
+/* seleção */
+
+.selecionado{
+background:#33b5c7;
+color:white;
+}
+
+#video1, #video2, #canvas2{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.selecionavel p{
+  padding:10px 20px;
+  border-radius:10px;
+  transition:0.2s;
+}
+
+.selecionavel p:hover{
+  background:#bfeaf2;
+}
+
+.selecionado{
+  background:#33b5c7;
+  color:white;
+  font-weight:bold;
+}
+
+#videoAvatar{
+  width: 100%;
+  max-width: 320px;   
+  height: 650px;      
+  background: #000;
+  object-fit: cover;  
+  border-radius: 10px;
+}
